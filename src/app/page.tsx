@@ -1,11 +1,10 @@
+import Herobg from "./components/heroBg"
 
 export default function Home() {
   return (
     <div>
 
-      <div>
-        Main Content
-      </div>
+      <Herobg/>
 
     </div>
   );

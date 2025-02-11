@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import StarGalaxy from "./components/starGalaxy";
+import "./components/btnStyles.css"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
+        <StarGalaxy />
         <Header />
         <div className="min-h-screen">
           {children}
