@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
         <div
-            className="flex flex-row w-full h-[100vh] bg-cover bg-center z-[2]"
+            className="flex flex-row w-full h-[100vh] bg-cover bg-center z-[3]"
         // style={{ backgroundImage: "url('/main.svg')" }}
         >
             <div className="w-full flex flex-col justify-center items-start p-16 gap-7">
@@ -12,7 +12,7 @@ export default function Hero() {
                     user-friendly, and scalable websites tailored to your business needs.
                 </p>
                 <div className="flex align-middle w-full">
-                    <button className="btn">Lets Start</button>
+                    <button className="btn w-36">Lets Start</button>
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">

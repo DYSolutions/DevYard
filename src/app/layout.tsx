@@ -3,8 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import StarGalaxy from "./components/starGalaxy";
-import "./components/btnStyles.css"
+import StarGalaxy from "./components/starGalaxy"
 
 const poppins = Poppins({
   subsets: ["latin"],
