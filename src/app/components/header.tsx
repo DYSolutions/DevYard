@@ -2,13 +2,12 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation";
-import { use } from "react";
 
 export default function Header() {
     const pathName = usePathname();
 
     return (
-        <div className="text-center flex flex-row fixed w-full shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md items-center z-[5]">
+        <div className="text-center flex flex-row fixed w-full shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md items-center z-[20]">
             <div className="p-2">
                 <img src="/dylogo.png" alt="Logo" width="50px" height="50px" />
             </div>

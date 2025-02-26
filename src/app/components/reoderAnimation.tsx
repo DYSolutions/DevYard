@@ -1,55 +1,61 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function Reordering() {
-    const [order, setOrder] = useState(initialOrder)
+    const [order, setOrder] = useState(initialOrder);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setOrder(shuffle(order)), 1000)
-        return () => clearTimeout(timeout)
-    }, [order])
+        const timeout = setTimeout(() => setOrder(shuffle(order)), 1000);
+        return () => clearTimeout(timeout);
+    }, [order]);
 
     return (
         <ul style={container}>
-            {order.map((backgroundColor) => (
+            {order.map((src) => (
                 <motion.li
-                    key={backgroundColor}
+                    key={src}
                     layout
                     transition={spring}
-                    style={{ ...item, backgroundColor }}
-                />
+                    style={item}
+                >
+                    <img src={src} alt="Reordering Item" style={imageStyle} />
+                </motion.li>
             ))}
         </ul>
-    )
+    );
 }
 
 const initialOrder = [
-    "#ff0088",
-    "#dd00ee",
-    "#9911ff",
-    "#0d63f8",
-]
+    "/images/tailwind.png",
+    "/images/express.png",
+    "/images/react.png",
+    "/images/js.png",
+    "/images/next.png",
+    "/images/mysql.png",
+    "/images/node-js.png",
+    "/images/postger.png",
+    "/images/firebase.png"
+];
 
 /**
  * ==============   Utils   ================
  */
-function shuffle([...array]: string[]) {
-    return array.sort(() => Math.random() - 0.5)
+function shuffle([...array]) {
+    return array.sort(() => Math.random() - 0.5);
 }
 
 /**
  * ==============   Styles   ================
  */
-
 const spring = {
     type: "spring",
     damping: 20,
     stiffness: 300,
-}
+};
 
-const container: React.CSSProperties = {
+const container: React.CSSProperties  = {
     listStyle: "none",
     padding: 0,
     margin: 0,
@@ -57,14 +63,24 @@ const container: React.CSSProperties = {
     display: "flex",
     flexWrap: "wrap",
     gap: 10,
-    width: 300,
+    width: 500,
     flexDirection: "row",
     justifyContent: "center",
-    alignItems: "center",
-}
+    alignItems: "center"
+};
 
-const item: React.CSSProperties = {
-    width: 100,
-    height: 100,
+const item = {
+    width: 150,
+    height: 150,
     borderRadius: "10px",
-}
+    overflow: "hidden",
+    display: "flex",
+    justifyContent: "center", 
+    alignItems: "center" 
+};
+
+const imageStyle: React.CSSProperties  = {
+    width: "100px",
+    height: "auto",
+    padding:"10px",
+};
