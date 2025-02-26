@@ -1,10 +1,12 @@
+import "./animation.css"
+
 export default function Hero() {
     return (
         <div
             className="flex flex-row w-full h-[100vh] bg-cover bg-center z-[3]"
         // style={{ backgroundImage: "url('/main.svg')" }}
         >
-            <div className="w-full flex flex-col justify-center items-start p-16 gap-7">
+            <div className="w-full flex flex-col justify-center items-start p-16 gap-7 heroLeftAnimation">
                 <h1 className="text-5xl text-white font-bold">We are a visionary web development firm...</h1>
                 <p className="text-neutral-500 text-justify font-medium">
                     In today’s digital world, a powerful online presence is essential for success.
@@ -16,7 +18,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">
-                <img src="/mainIconsdark.svg" height="80%" width="80%" alt="Main Icon" />
+                <img src="/mainIconsdark.svg" height="80%" width="80%" alt="Main Icon" className="heroRightAnimation"/>
             </div>
         </div>
     );
