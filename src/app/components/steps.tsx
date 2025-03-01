@@ -1,17 +1,42 @@
-export default function Steps(){
-    return(
-        <div className="h-auto w-full flex flex-col items-center justify-center p-32 gap-5 border-t-[1px] border-gray-700">
-        <h1 className="text-5xl font-semibold text-white">How we work</h1>
-       <p className="text-neutral-500 font-medium">subscibe to somting write this para</p>
-       <div className="h-[200px] w-full flex flex-row items-center justify-center gap-0 leftAnimation">
-        <div className="roundContainer h-[200px] w-[200px]"></div>
-        <div className="h-[80px] w-[80px] rounded-full"><img src="icons/arrow.svg" alt="arrow" height="50px" width="100%"/></div>
-        <div className="roundContainer h-[200px] w-[200px]"></div>
-        <div className="h-[80px] w-[80px] rounded-full"><img src="icons/arrow.svg" alt="arrow" height="50px" width="100%"/></div>
-        <div className="roundContainer h-[200px] w-[200px]"></div>
-        <div className="h-[80px] w-[80px] rounded-full"><img src="icons/arrow.svg" alt="arrow" height="50px" width="100%"/></div>
-        <div className="roundContainer h-[200px] w-[200px]"></div>
-       </div>
-    </div>
+export default function Steps() {
+
+    const steps = [
+        {
+            path: "icons/discuss.svg",
+            name: "Discovery",
+            note: "We start by understanding your needs, goals, and vision for the project."
+        },
+        {
+            path: "icons/plan.svg",
+            name: "Planning",
+            note: "Our team creates a detailed roadmap and strategy for your project."
+        },
+        {
+            path: "icons/develop.svg",
+            name: "Development",
+            note: "We build your solution using the latest technologies and best practices."
+        },
+        {
+            path: "icons/lunch.svg",
+            name: "Launch",
+            note: "Your project goes live with our full support and maintenance."
+        }
+    ]
+    return (
+        <div className="h-auto w-full flex flex-col items-center justify-center p-32 pt-0 gap-5 flipAnimation">
+            <h1 className="text-5xl font-semibold text-blue-600 h1">How we work</h1>
+            <p className="text-neutral-500 font-medium">Our proven process ensures successful project delivery every time.</p>
+            <div className="w-full h-[200px] flex items-center">
+                <div className="h-[2px] w-full flex flex-row items-center justify-between gap-0 bg-blue-600">
+                    {steps.map((step, index) => (
+                        <div key={index} className="container h-[200px] w-[250px] flex flex-col items-center justify-center gap-1 p-5">
+                            <img src={step.path} width={40} height={40} alt={step.name} />
+                            <div className="text-blue-600 text-[25px] font-sans font-bold">{step.name}</div>
+                            <div className="mPara font-sans">{step.note}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
     )
 }
