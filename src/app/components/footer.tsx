@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <div className="flex flex-col justify-center items-center border-t border-neutral-800 text-sm">
-            <div className="pt-10 pb-10  flex flex-row w-3/4 justify-between border-b border-neutral-800">
+        <div className="flex flex-col justify-center items-center border-t border-gray-300 text-sm">
+            <div className="pt-10 pb-10  flex flex-row w-3/4 justify-between border-b border-gray-300">
                 <div className="flex flex-col gap-1 text-neutral-500">
                     <img src="/dylogo.png" alt="Logo" width="100px" height="100px" />
                     <p>Sample Address <br />
@@ -12,13 +12,13 @@ export default function Footer() {
                     <p>email address</p>
                 </div>
                 <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-white">services</h3>
+                    <h3 className="font-semibold text-blue-600">services</h3>
                     <ul className="text-neutral-500 flex flex-col gap-2">
                         <li> Web Development</li>
                     </ul>
                 </div>
                 <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-white">Company</h3>
+                    <h3 className="font-semibold text-blue-600">Company</h3>
                     <ul className="text-neutral-500 flex flex-col gap-2">
                         <li>Home</li>
                         <li>AboutUs</li>
@@ -26,7 +26,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-white">Legal</h3>
+                    <h3 className="font-semibold text-blue-600">Legal</h3>
                     <ul className="text-neutral-500 flex flex-col gap-2">
                         <li>Terms & Conditions</li>
                     </ul>

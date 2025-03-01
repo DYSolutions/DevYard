@@ -29,14 +29,14 @@ export default function Reordering() {
 
 const initialOrder = [
     "/images/tailwind.png",
-    "/images/express.png",
+    "/images/fb.png",
     "/images/react.png",
-    "/images/js.png",
-    "/images/next.png",
-    "/images/mysql.png",
-    "/images/node-js.png",
-    "/images/postger.png",
-    "/images/firebase.png"
+    "/images/javaScript.png",
+    "/images/flutter.png",
+    "/images/git.png",
+    "/images/python.png",
+    "/images/android.png",
+    "/images/ts.png"
 ];
 
 /**
@@ -55,7 +55,7 @@ const spring = {
     stiffness: 300,
 };
 
-const container: React.CSSProperties  = {
+const container: React.CSSProperties = {
     listStyle: "none",
     padding: 0,
     margin: 0,
@@ -75,12 +75,12 @@ const item = {
     borderRadius: "10px",
     overflow: "hidden",
     display: "flex",
-    justifyContent: "center", 
-    alignItems: "center" 
+    justifyContent: "center",
+    alignItems: "center"
 };
 
-const imageStyle: React.CSSProperties  = {
+const imageStyle: React.CSSProperties = {
     width: "100px",
     height: "auto",
-    padding:"10px",
+    padding: "10px",
 };

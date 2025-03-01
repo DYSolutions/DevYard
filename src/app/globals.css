@@ -3,64 +3,84 @@
 @tailwind utilities;
 
 
-body{
-    @apply bg-[#030014]
+body {
+    @apply bg-[white]
 }
+
+:root {
+    --font-poppins: 'poppins sans', antialiased;
+}
+
+body {
+    font-family: var(--font-poppins);
+}
+
+.heroHeading {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.h1 {
+    font-family: cursive;
+    font-weight: bold;
+}
+
 
 .nav-link {
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: white;
+    color: #008afb;
 }
 
-.btn {
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    z-index: 10;
-    background: linear-gradient(180deg,
-            rgba(60, 8, 126, 0) 0%,
-            rgba(60, 8, 126, 0.32) 100%),
-        rgba(113, 47, 255, 0.12);
-    box-shadow: inset 0 0 12px #bf97ff3d;
-}
-
-.btn:hover {
-    background: linear-gradient(180deg,
-            rgba(60, 8, 126, 0) 0%,
-            rgba(60, 8, 126, 0.42) 100%),
-        rgba(113, 47, 255, 0.24);
-    box-shadow: inset 0 0 12px #bf97ff70;
-}
-
-.container{
-    background: linear-gradient(180deg,
-            rgba(133, 128, 139, 0.048) 0%,
-            rgba(212, 199, 228, 0.075) 100%),
-        rgba(188, 169, 231, 0.027);
-    box-shadow: inset 0 0 12px #bf97ff11;
+.container {
+    background: white;
+    box-shadow: 0 0 12px #00000028;
     border-radius: 10px;
- /* width: 100% */
+    /* width: 100% */
 }
 
-.roundContainer{
-    background: linear-gradient(180deg,
-            rgba(133, 128, 139, 0.048) 0%,
-            rgba(212, 199, 228, 0.075) 100%),
-        rgba(188, 169, 231, 0.027);
-    box-shadow: inset 0 0 12px #bf97ff7e;
+.roundContainer {
+    background: white;
+    box-shadow: 0 0 12px #00000034;
     border-radius: 50%;
- /* width: 100% */
+    /* width: 100% */
 }
 
-.para{
+.para {
     padding: 5px;
     color: gray;
     text-align: justify;
+}
+
+.mPara {
+    color: gray;
+    text-align: justify;
+    font-size: 13px;
+}
+
+
+.btn {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%)
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }

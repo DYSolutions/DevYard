@@ -74,9 +74,9 @@ const Slide = forwardRef(function Slide(
                 },
             }}
             exit={{ opacity: 0, x: direction * -50 }}
-            style={{ ...box,borderRadius:"5px" }}
+            style={{ ...box, borderRadius: "5px" }}
         >
-            <img src={image} alt="Slide" style={{...imageStyle,borderRadius:"5px"}} />
+            <img src={image} alt="Slide" style={{ ...imageStyle, borderRadius: "5px" }} />
         </motion.div>
     );
 });
@@ -134,14 +134,14 @@ const box: React.CSSProperties = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding:"3px",
+    padding: "3px",
     boxShadow: `
         0 4px 6px rgba(0, 0, 0, 0.1), // Base shadow
         0 10px 20px rgba(0, 0, 0, 0.2), // Medium shadow
         0 20px 40px rgba(0, 0, 0, 0.3) // Large shadow
     `,
     transform: "translateZ(0)", // Optional: Enhances the 3D effect
-    
+
 };
 
 const button: React.CSSProperties = {
