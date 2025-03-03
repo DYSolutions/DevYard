@@ -7,7 +7,7 @@
 @keyframes rightAnimation {
   from {
     display: none;
-    transform: translateX(300px);
+    transform: translateX(50px);
   }
 
   to {
@@ -25,7 +25,7 @@
 @keyframes leftAnimation {
   from {
     display: none;
-    transform: translateX(-300px);
+    transform: translateX(-50px);
   }
 
   to {
@@ -43,7 +43,7 @@
 @keyframes heroRightAnimation {
   from {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(40px);
   }
 
   to {
@@ -61,7 +61,7 @@
 @keyframes heroLeftAnimation {
   from {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-50px);
   }
 
   to {
