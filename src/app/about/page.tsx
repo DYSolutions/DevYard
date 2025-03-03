@@ -21,7 +21,7 @@ export default function About() {
                 />
                 <video
                     src="robot.mp4"
-                    className="absolute right-0 top-[700px] w-[250px] h-[250px] object-cover z-[-1] rightAnimation"
+                    className="absolute right-0 top-[700px] w-[250px] h-[250px] object-cover z-[-1] fadeViewAnimation"
                     autoPlay
                     loop
                     muted

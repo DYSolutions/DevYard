@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="h-auto w-full p-32 gap-5 relative">
             {/* Background Image */}
-            <div className="absolute top-0 left-0 w-full h-full z-[-1] rightAnimation">
+            <div className="absolute top-0 left-0 w-full h-full z-[-1] yRotateAnimation">
                 <img src="aboutBg.png" alt="heroBackground" className="h-[100vh] w-[100%]" />
             </div>
 
