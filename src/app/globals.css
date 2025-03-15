@@ -84,3 +84,89 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+
+    body{
+        /* background-color: red; */
+    }
+
+    .mediaReorder{
+        display: none;
+    }
+
+    .mediaNav{
+        display: none;
+    }
+
+    .mediaServiseCards, .mediaSkilCards,.mediaStepCards{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:10px;
+    }
+
+    .mediaPara,.mediaArrowAnimation,.mediaEmailInput,.mediaSkilAnimation,.mediaSubscribeAnimation,.mediaHeroBgImage,.mediaQuestionImage{
+        display: none;
+    }
+
+    .mediaSubsribeTextInput{
+        width: 300px;
+    }
+
+    .mediaHeroBg{
+        height: auto;
+    }
+
+    .mediaHeroHeading{
+        font-size: 40px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .mediaHero{
+height: auto;
+background-color: rgb(193, 234, 250);
+    }
+    .mediaHeroSub{
+        margin-top: 50px;
+        padding: 32px;
+        gap: 15px;
+    }
+
+    .mediaGap{
+        gap:10px;
+        padding-bottom: 0;
+    }
+
+    .mediaStepCards{
+        width: 2px;
+        height: auto;
+
+    }
+
+    .mediaStepsMain{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .mediaQutionsContainer{
+        height: auto;
+        width: 700px;
+        box-shadow:none;
+        border-radius: 0;
+    }
+
+    .mediaGapQuestions{
+        gap:10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mediaParaQuery{
+        padding: 10px
+    }
+}
