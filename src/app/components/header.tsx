@@ -13,7 +13,7 @@ export default function Header() {
             <div className="p-2">
                 <Image src={logo} alt="Logo" width={50} height={50} />
             </div>
-            <div className="flex flex-row justify-center items-center absolute right-5">
+            <div className="mediaNav flex flex-row justify-center items-center absolute right-5">
                 <nav className="text-sm border border-[#426cf861] bg-[white] p-2 pl-5 pr-5 rounded-full">
                     <ul className="flex flex-row gap-9 justify-center font-semibold">
                         <li><Link href="/" className={`nav-link ${pathName === "/" ? "text-blue-600" : "text-neutral-500"}`}>Home</Link></li>
