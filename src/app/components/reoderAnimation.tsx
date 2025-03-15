@@ -31,9 +31,6 @@ export default function Reordering() {
                     <motion.li
                         key={src.src} // Ensure key is unique
                         layout
-                        initial={{ opacity: 0, scale: 0.8, y: 10 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0, scale: 0.8, y: -10 }}
                         transition={spring}
                         style={item}
                     >
@@ -79,8 +76,8 @@ const container: React.CSSProperties = {
 };
 
 const item: React.CSSProperties = {
-    width: 150,
-    height: 150,
+    width: 160,
+    height: 160,
     borderRadius: "10px",
     overflow: "hidden",
     display: "flex",
