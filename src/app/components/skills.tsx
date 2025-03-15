@@ -19,11 +19,11 @@ export default function Skills() {
   ];
 
   return (
-    <div className="h-auto w-full flex flex-row gap-5 justify-center relative pb-32">
+    <div className="h-auto w-full flex flex-row gap-5 justify-center relative pb-32 mediaGap">
 
       <div className="flex flex-col gap-5 items-center justify-center p-16">
-        <h1 className="text-5xl font-semibold text-blue-600 h1">Technologies <span className="text-black">We Used </span></h1>
-        <div className="w-[auto] h-auto grid grid-cols-5 grid-rows-3 gap-2 items-center justify-center">
+        <h1 className="text-5xl font-semibold text-blue-600 h1 mediaHeroHeading">Technologies <span className="text-black">We Used </span></h1>
+        <div className="w-[auto] h-auto grid grid-cols-5 grid-rows-3 gap-2 items-center justify-center mediaSkilCards">
           {images.map((item, index) => (
             <div
               className="h-[80px] w-[200px] container flex flex-row items-center justify-start gap-3 p-5 rightAnimation"
@@ -44,7 +44,7 @@ export default function Skills() {
 
       <video
         src="skill.mp4"
-        className="absolute bottom-0 right-0 w-[300px] h-[300px] object-cover z-[-1] fadeViewAnimation"
+        className="absolute bottom-0 right-0 w-[300px] h-[300px] object-cover z-[-1] fadeViewAnimation mediaSkilAnimation"
         autoPlay
         loop
         muted

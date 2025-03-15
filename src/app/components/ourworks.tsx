@@ -2,8 +2,8 @@ export default function OurWorks() {
     return (
         <div className="h-auto w-full flex flex-col items-center text-black justify-center pt-16 pb-16 gap-5 bg-blue-100">
             {/* Heading */}
-            <h1 className="text-5xl font-semibold text-blue-600 h1">Our Works</h1>
-            <p className="text-neutral-500 font-medium">
+            <h1 className="text-5xl font-semibold text-blue-600 h1 mediaHeroHeading">Our Works</h1>
+            <p className="text-neutral-500 font-medium mediaParaQuery">
                 Explore our portfolio of successful projects and digital solutions.
             </p>
 

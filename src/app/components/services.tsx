@@ -68,12 +68,13 @@ export default function Services() {
     ];
 
     return (
-        <div className="h-auto w-full flex flex-col items-center justify-center pt-16 pb-16 gap-5">
-            <h1 className="text-5xl font-semibold text-blue-600 h1">Our Services</h1>
-            <p className="text-neutral-500">We offer a full range
+        <div className="h-auto w-full flex flex-col items-center justify-center pt-16 pb-16 gap-5 mediaGap">
+            <h1 className="text-5xl font-semibold text-blue-600 h1 mediaHeroHeading">Our Services</h1>
+            <p className="text-neutral-500 mediaPara">
+                We offer a full range
                 of digital services to help
                 your business succeed in the digital age.</p>
-            <div className="grid grid-cols-3 grid-rows-2 gap-8 yRotateAnimation">
+            <div className="mediaServiseCards grid grid-cols-3 grid-rows-2 gap-8 yRotateAnimation">
                 {services.map((item, index) => (
                     <motion.div
                         key={index}

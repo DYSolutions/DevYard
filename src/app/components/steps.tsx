@@ -23,11 +23,11 @@ export default function Steps() {
         }
     ]
     return (
-        <div className="h-auto w-full flex flex-col items-center justify-center p-32 pt-0 gap-5 flipAnimation">
-            <h1 className="text-5xl font-semibold text-blue-600 h1">How we work</h1>
-            <p className="text-neutral-500 font-medium">Our proven process ensures successful project delivery every time.</p>
-            <div className="w-full h-[200px] flex items-center">
-                <div className="h-[2px] w-full flex flex-row items-center justify-between gap-0 bg-blue-600">
+        <div className="h-auto w-full flex flex-col items-center justify-center p-32 pt-0 gap-5 flipAnimation mediaGap">
+            <h1 className="text-5xl font-semibold text-blue-600 h1 mediaHeroHeading">How we work</h1>
+            <p className="text-neutral-500 font-medium mediaPara">Our proven process ensures successful project delivery every time.</p>
+            <div className="w-full h-[200px] flex items-center mediaStepsMain">
+                <div className="h-[2px] w-full flex flex-row items-center justify-between gap-0 bg-blue-600 mediaStepCards">
                     {steps.map((step, index) => (
                         <div key={index} className="container h-[200px] w-[250px] flex flex-col items-center justify-center gap-1 p-5">
                             <img src={step.path} width={40} height={40} alt={step.name} />

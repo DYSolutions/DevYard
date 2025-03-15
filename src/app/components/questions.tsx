@@ -3,13 +3,13 @@
 export default function Questions() {
     const notes = ["Expertise & Innovation", "Customized Solutions", "Agile & Efficient Development", "Security & Reliability", "Dedicated Support"]
     return (
-        <div className="h-auto w-full flex flex-row items-center justify-center p-16 gap-5">
-            <div className="h-[500px] w-[500px]">
+        <div className="h-auto w-full flex flex-row items-center justify-center p-16 gap-5 mediaGapQuestions">
+            <div className="h-[500px] w-[500px] mediaQuestionImage">
                 <img src="heroDev4.png" className="leftAnimation rounded-md" />
 
             </div>
-            <div className="h-[500px] w-[500px] container flex flex-col gap-5 items-start p-10 rightAnimation">
-                <h1 className="text-4xl font-semibold text-blue-600 h1">Why Choose Us?</h1>
+            <div className="h-[500px] w-[500px] container flex flex-col gap-5 items-start p-10 fadeViewAnimation mediaQutionsContainer">
+                <h1 className="text-4xl font-semibold text-blue-600 h1 mediaHeroHeading">Why Choose Us?</h1>
                 <p className="mPara">At DevYard Solutions Private Limited, we are committed to
                     delivering cutting-edge technology solutions that drive business success.
                     Here’s why we are the right choice for your software development needs:
