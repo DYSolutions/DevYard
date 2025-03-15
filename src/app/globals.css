@@ -87,65 +87,89 @@ body {
 
 @media screen and (max-width: 480px) {
 
-    body{
-        /* background-color: red; */
-    }
-
-    .mediaReorder{
+    .mediaReorder {
         display: none;
     }
 
-    .mediaNav{
+    .mediaNav {
         display: none;
     }
-
-    .mediaServiseCards, .mediaSkilCards,.mediaStepCards{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap:10px;
+    
+    .mediaNavMain{
+        background-color: white;
+        box-shadow: 0 0 0 0;
+        position: relative;
+        border-bottom: 1px solid rgb(247, 247, 247);
     }
 
-    .mediaPara,.mediaArrowAnimation,.mediaEmailInput,.mediaSkilAnimation,.mediaSubscribeAnimation,.mediaHeroBgImage,.mediaQuestionImage{
-        display: none;
+    .mediaVariant{
+        display: flex;
+        position: absolute;
+        right: 20px;
     }
 
-    .mediaSubsribeTextInput{
+    .mediaServiseCards,
+    .mediaSkilCards,
+    .mediaStepCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mediaServiceCard{
         width: 300px;
     }
 
-    .mediaHeroBg{
+    .mediaPara,
+    .mediaArrowAnimation,
+    .mediaEmailInput,
+    .mediaSkilAnimation,
+    .mediaSubscribeAnimation,
+    .mediaHeroBgImage,
+    .mediaQuestionImage {
+        display: none;
+    }
+
+    .mediaSubsribeTextInput {
+        width: 300px;
+    }
+
+    .mediaHeroBg {
         height: auto;
     }
 
-    .mediaHeroHeading{
-        font-size: 40px;
-        font-family:Arial, Helvetica, sans-serif;
+    .mediaHeroHeading {
+        font-size: 35px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-    .mediaHero{
-height: auto;
-background-color: rgb(193, 234, 250);
+    .mediaHero {
+        height: auto;
+        /* background-color: rgb(193, 234, 250); */
     }
-    .mediaHeroSub{
-        margin-top: 50px;
-        padding: 32px;
+
+    .mediaHeroSub {
+        margin-top: 20px;
+        padding: 5px;
         gap: 15px;
+        text-align: center;
     }
 
-    .mediaGap{
-        gap:10px;
+    .mediaGap {
+        gap: 10px;
         padding-bottom: 0;
     }
 
-    .mediaStepCards{
+    .mediaStepCards {
         width: 2px;
         height: auto;
 
     }
 
-    .mediaStepsMain{
+    .mediaStepsMain {
         height: auto;
         display: flex;
         flex-direction: column;
@@ -153,20 +177,44 @@ background-color: rgb(193, 234, 250);
         align-items: center;
     }
 
-    .mediaQutionsContainer{
+    .mediaQutionsContainer {
         height: auto;
         width: 700px;
-        box-shadow:none;
+        box-shadow: none;
         border-radius: 0;
     }
 
-    .mediaGapQuestions{
-        gap:10px;
+    .mediaGapQuestions {
+        gap: 10px;
         padding-left: 5px;
         padding-right: 5px;
     }
 
-    .mediaParaQuery{
-        padding: 10px
+    .mediaParaQuery {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .mediaHeroPara{
+        font-size: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mediaFooter{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mediaButton{
+        display: flex;
+    }
+
+    .mediaAboutMain{
+        padding: 10px;
+    }
+
+    .mediaVissionMission{
+        width: 300px;
     }
 }

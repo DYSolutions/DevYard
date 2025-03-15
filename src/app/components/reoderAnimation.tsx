@@ -76,8 +76,8 @@ const container: React.CSSProperties = {
 };
 
 const item: React.CSSProperties = {
-    width: 160,
-    height: 160,
+    width: 150,
+    height: 150,
     borderRadius: "10px",
     overflow: "hidden",
     display: "flex",
@@ -88,7 +88,7 @@ const item: React.CSSProperties = {
 };
 
 const imageStyle: React.CSSProperties = {
-    width: "100px",
+    width: "90px",
     height: "auto",
     padding: "10px",
 };
