@@ -78,7 +78,7 @@ export default function Services() {
                 {services.map((item, index) => (
                     <motion.div
                         key={index}
-                        className="container w-[400px] h-[250px] flex justify-start text-black z-10 cursor-pointer p-10"
+                        className="mediaServiceCard container w-[400px] h-[250px] flex justify-start text-black z-10 cursor-pointer p-10"
                         whileHover={{
                             scale: [null, 1.0, 1.1],
                             transition: {

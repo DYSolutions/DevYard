@@ -4,12 +4,13 @@ import Link from "next/link"
 import { usePathname } from "next/navigation";
 import logo from "../../../public/dylogo.png"
 import Image from "next/image";
+import Variants from "./variants"
 
 export default function Header() {
     const pathName = usePathname();
 
     return (
-        <div className="text-center flex flex-row fixed w-full shadow-lg bg-[#ffffff34] backdrop-blur-md items-center z-[20]">
+        <div className="text-center flex flex-row fixed w-full shadow-lg bg-[#ffffff34] backdrop-blur-md items-center z-[20] mediaNavMain">
             <div className="p-2">
                 <Image src={logo} alt="Logo" width={50} height={50} />
             </div>
@@ -23,6 +24,9 @@ export default function Header() {
                     </ul>
                 </nav>
                 <button className="btn">Lets Start</button>
+            </div>
+            <div className="hidden mediaVariant">
+                <Variants />
             </div>
         </div>
     );

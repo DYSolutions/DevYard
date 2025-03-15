@@ -3,25 +3,25 @@ import Subscribe from "./../components/subscribe"
 export default function About() {
     return (
         <>
-            <div className="text-blue-600 w-full h-auto pt-32 pl-60 pr-60 relative">
-                <h1 className="text-6xl font-semibold h1 fadeAnimation">About Us</h1>
+            <div className="text-blue-600 w-full h-auto pt-32 pl-60 pr-60 relative mediaAboutMain">
+                <h1 className="text-6xl font-semibold h1 fadeAnimation mediaHeroHeading">About Us</h1>
                 <video
                     src="speacker.mp4"
-                    className="absolute left-0 top-[380px] w-[40vh] h-[40vh] object-cover z-[-1] fadeAnimation"
+                    className="absolute left-0 top-[380px] w-[40vh] h-[40vh] object-cover z-[-1] fadeAnimation mediaHeroBgImage"
                     autoPlay
                     loop
                     muted
                 />
                 <video
                     src="vission.mp4"
-                    className="absolute left-[50px] top-[1100px] w-[200px] h-[200px] object-cover z-[-1] zoomInAnimation"
+                    className="absolute left-[50px] top-[1100px] w-[200px] h-[200px] object-cover z-[-1] zoomInAnimation mediaHeroBgImage"
                     autoPlay
                     loop
                     muted
                 />
                 <video
                     src="robot.mp4"
-                    className="absolute right-0 top-[700px] w-[250px] h-[250px] object-cover z-[-1] fadeViewAnimation"
+                    className="absolute right-0 top-[700px] w-[250px] h-[250px] object-cover z-[-1] fadeViewAnimation mediaHeroBgImage"
                     autoPlay
                     loop
                     muted
@@ -34,11 +34,11 @@ export default function About() {
                             marketing, e-commerce solutions, and UI/UX design. Our mission is to empower
                             businesses with cutting-edge technology, ensuring seamless user experiences and
                             scalable solutions.</p>
-                        <img src="aboutusImage01.png" width='400px' height='auto' alt="about_us" className="heroRightAnimation" />
+                        <img src="aboutusImage01.png" width='400px' height='auto' alt="about_us" className="heroRightAnimation mediaHeroBgImage" />
                     </div>
 
                     <div className="flex flex-row items-center justify-center gap-8 mb-8">
-                        <img src="aboutusImage02.png" width='400px' height='auto' alt="about_us" className="leftAnimation" />
+                        <img src="aboutusImage02.png" width='400px' height='auto' alt="about_us" className="leftAnimation mediaHeroBgImage" />
                         <p className="para rightAnimation">With a team of passionate developers, designers, and strategists,
                             we bring expertise, creativity, and efficiency to every project. Whether you're a
                             startup or an enterprise, we tailor our services to meet your unique needs, driving
@@ -47,12 +47,12 @@ export default function About() {
                             an impact. Let’s innovate together!</p>
                     </div>
 
-                    <div className="flex flex-row w-full justify-center items-center gap-5">
-                        <div className="container flex flex-col gap-5 h-auto w-[600px] p-5 zoomInAnimation">
+                    <div className="flex flex-row w-full justify-center items-center gap-5 mediaStepsMain">
+                        <div className="container flex flex-col gap-5 h-auto w-[600px] p-5 zoomInAnimation mediaVissionMission">
                             <div className="flex flex-row items-center justify-start gap-5 h-[60px]">
                                 <img src="icons/web.svg" height="auto" width="50px" alt="mobile-app-development" />
                                 <h3 className="text-2xl flex flex-col font-semibold">
-                                    <div className="">Vision</div>
+                                    <div className="mediaHeroHeading">Vision</div>
                                 </h3>
                             </div>
                             <p className="para">"In today’s digital world, a powerful online presence
@@ -60,11 +60,11 @@ export default function About() {
                                 developing high-performance, user-friendly, and scalable websites tailored to
                                 your business needs."</p>
                         </div>
-                        <div className="container flex flex-col gap-5 h-auto w-[600px] p-5 zoomInAnimation">
+                        <div className="container flex flex-col gap-5 h-auto w-[600px] p-5 zoomInAnimation mediaVissionMission">
                             <div className="flex flex-row items-center justify-start gap-5 h-[60px]">
                                 <img src="icons/seo.svg" height="auto" width="50px" alt="mobile-app-development" />
                                 <h3 className="text-2xl flex flex-col font-semibold">
-                                    <div className="">Mission</div>
+                                    <div className="mediaHeroHeading">Mission</div>
                                 </h3>
                             </div>
                             <p className="para ">"In today’s digital world, a powerful online presence
@@ -75,7 +75,7 @@ export default function About() {
                     </div>
 
                     <div className="flex flex-col p-10 gap-5 items-center justify-center bg-blue-50 yRotateAnimation">
-                        <h1 className="text-5xl font-semibold h1">Latest Works</h1>
+                        <h1 className="text-5xl font-semibold h1 mediaHeroHeading">Latest Works</h1>
                         <p className="mPara">Creativity with technical expertise to create apps that stand out in a crowded marketplace.</p>
                         <div className="flex flex-row w-full justify-center items-center gap-5 text-black">
                             {/* Card */}
@@ -125,7 +125,7 @@ export default function About() {
                     <div className="flex flex-row gap-8 items-center justify-center w-full relative">
                         <video
                             src="contact2.mp4"
-                            className="w-[50vh] h-[50vh] object-cover z-[-1] flipAnimation"
+                            className="w-[50vh] h-[50vh] object-cover z-[-1] flipAnimation mediaHeroBgImage"
                             autoPlay
                             loop
                             muted

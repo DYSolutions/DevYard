@@ -23,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
-        {/* <StarGalaxy /> */}
         <Header />
         <div className="min-h-screen">
           {children}

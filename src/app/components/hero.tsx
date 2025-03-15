@@ -9,7 +9,7 @@ export default function Hero() {
         >
             <div className="w-full flex flex-col justify-center items-start p-16 gap-7 heroLeftAnimation mediaHeroSub">
                 <h1 className="text-6xl text-blue-600 heroHeading mediaHeroHeading"><span className="text-black">We are a </span>visionary development firm...</h1>
-                <p className="text-neutral-500 text-justify font-medium">
+                <p className="text-neutral-500 text-justify font-medium mediaHeroPara">
                     In today’s digital world, a powerful online presence is essential for success.
                     At Dev Yard, we specialize in designing and developing high-performance,
                     user-friendly, and scalable websites tailored to your business needs.
@@ -18,6 +18,10 @@ export default function Hero() {
                     <input type="text" placeholder="Enter your email address" className="container h-12 w-[500px] p-4 z-10 outline-0  text-black" />
                     <button className="btn w-[150px] h-12">Get a Touch</button>
                 </div>
+                <div className="flex-row items-center align-middle justify-center w-full hidden mediaButton">
+                    <button className="btn w-[150px] h-12">Lets start</button>
+                </div>
+                
             </div>
             <div className="w-full flex justify-center items-center heroRightAnimation mt-10 mediaReorder">
                 {/* <img src="heroDev3.png" height="100%" width="90%" alt="Main Icon" className="heroRightAnimation"/> */}
