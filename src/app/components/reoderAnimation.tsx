@@ -2,6 +2,16 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import tailwind from "../../../public/images/tailwind.png"
+import fb from "../../../public/images/fb.png"
+import react from "../../../public/images/react.png"
+import javaScript from "../../../public/images/javaScript.png"
+import flutter from "../../../public/images/flutter.png"
+import git from "../../../public/images/git.png"
+import python from "../../../public/images/python.png"
+import android from "../../../public/images/android.png"
+import ts from "../../../public/images/ts.png"
 
 export default function Reordering() {
     const [order, setOrder] = useState(initialOrder);
@@ -13,14 +23,14 @@ export default function Reordering() {
 
     return (
         <ul style={container}>
-            {order.map((src) => (
+            {order.map((src,index) => (
                 <motion.li
-                    key={src}
+                    key={index}
                     layout
                     transition={spring}
                     style={item}
                 >
-                    <img src={src} alt="Reordering Item" style={imageStyle} />
+                    <Image src={src} alt="Reordering Item" style={imageStyle} />
                 </motion.li>
             ))}
         </ul>
@@ -28,15 +38,15 @@ export default function Reordering() {
 }
 
 const initialOrder = [
-    "/images/tailwind.png",
-    "/images/fb.png",
-    "/images/react.png",
-    "/images/javaScript.png",
-    "/images/flutter.png",
-    "/images/git.png",
-    "/images/python.png",
-    "/images/android.png",
-    "/images/ts.png"
+    tailwind,
+    fb,
+    react,
+    javaScript,
+    flutter,
+    git,
+    python,
+    android,
+    ts
 ];
 
 /**

@@ -1,9 +1,12 @@
+import Image from "next/image"
+import logo from "../../../public/dylogo.png"
+
 export default function Footer() {
     return (
         <div className="flex flex-col justify-center items-center border-t border-gray-300 text-sm">
             <div className="pt-10 pb-10  flex flex-row w-3/4 justify-between border-b border-gray-300">
                 <div className="flex flex-col gap-1 text-neutral-500">
-                    <img src="/dylogo.png" alt="Logo" width="100px" height="100px" />
+                    <Image src={logo} alt="Logo" width={100} height={100} />
                     <p>Sample Address <br />
                         Sample Address<br />
                         Sample Address</p>
