@@ -19,7 +19,7 @@ export default function Hero() {
                     <button className="btn w-[150px] h-12">Get a Touch</button>
                 </div>
             </div>
-            <div className="w-full flex justify-center items-center heroRightAnimation">
+            <div className="w-full flex justify-center items-center heroRightAnimation mt-10">
                 {/* <img src="heroDev3.png" height="100%" width="90%" alt="Main Icon" className="heroRightAnimation"/> */}
                 <Reordering />
             </div>
