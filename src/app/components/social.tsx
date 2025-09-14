@@ -18,7 +18,7 @@ export default function Social() {
             firstHeading: "Email Us",
             lastHeading: "",
             notes: [
-               "devyard@gmail.com"
+               "thiransoftsolutions@gmail.com"
             ],
         },
         {
@@ -26,7 +26,7 @@ export default function Social() {
             firstHeading: "Visit Us",
             lastHeading: "",
             notes: [
-             "www.devyard.com"
+             "www.ThiranSoft.com"
             ],
         },
         {

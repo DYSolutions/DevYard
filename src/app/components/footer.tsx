@@ -1,12 +1,12 @@
 import Image from "next/image"
-import logo from "../../../public/dylogo.png"
+import logo from "../../../public/logoThiran.png"
 
 export default function Footer() {
     return (
         <div className="flex flex-col justify-center items-center border-t border-gray-300 text-sm">
             <div className="pt-10 pb-10  flex flex-row w-3/4 justify-between border-b border-gray-300 mediaFooter">
                 <div className="flex flex-col gap-1 text-neutral-500">
-                    <Image src={logo} alt="Logo" width={100} height={100} />
+                    <Image src={logo} alt="Logo" width={200} height={200} />
                     <p>Sample Address <br />
                         Sample Address<br />
                         Sample Address</p>
@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="pt-5 pb-5 text-neutral-500 mediaParaQuery">
-                © 2025 DevYard Solutions Private Limited. All rights reserved.
+                © 2025 ThiranSoft Software Solutions. All rights reserved.
             </div>
         </div>
     )

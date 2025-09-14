@@ -10,7 +10,7 @@ export default function Questions() {
             </div>
             <div className="h-[500px] w-[500px] container flex flex-col gap-5 items-start p-10 fadeViewAnimation mediaQutionsContainer">
                 <h1 className="text-4xl font-semibold text-blue-600 h1 mediaHeroHeading">Why Choose Us?</h1>
-                <p className="mPara">At DevYard Solutions Private Limited, we are committed to
+                <p className="mPara">At ThiranSoft Software Solutions Private Limited, we are committed to
                     delivering cutting-edge technology solutions that drive business success.
                     Here’s why we are the right choice for your software development needs:
                 </p>
@@ -22,7 +22,7 @@ export default function Questions() {
                         </div>
                     ))}
                 </div>
-                <p className="mPara">Partner with DevYard Solutions
+                <p className="mPara">Partner with ThiranSoft Software Solutions
                     and experience innovation, reliability, and excellence!
                 </p>
                 <div className="w-full h-full flex items-end justify-end">

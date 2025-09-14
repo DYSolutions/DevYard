@@ -28,7 +28,7 @@ export default function About() {
                 />
                 <div className="w-full flex flex-col gap-5">
                     <div className="flex flex-row items-center justify-center gap-8">
-                        <p className="para heroLeftAnimation">At DevYard Solutions, we are committed to transforming
+                        <p className="para heroLeftAnimation">At ThiranSoft Software Solutions, we are committed to transforming
                             ideas into innovative digital solutions. As a leading software development
                             company, we specialize in mobile app development, web development, SEO, digital
                             marketing, e-commerce solutions, and UI/UX design. Our mission is to empower
@@ -43,7 +43,7 @@ export default function About() {
                             we bring expertise, creativity, and efficiency to every project. Whether you're a
                             startup or an enterprise, we tailor our services to meet your unique needs, driving
                             digital success and business growth.
-                            At DevYard Solutions, we don’t just build software—we create experiences that make
+                            At ThiranSoft Software Solutions, we don’t just build software—we create experiences that make
                             an impact. Let’s innovate together!</p>
                     </div>
 
@@ -85,7 +85,7 @@ export default function About() {
                                     src="works/image.png"
                                     width="250px"
                                     height="100%"
-                                    alt="devyard"
+                                    alt="ThiranSoft Software Solutions"
                                     className="rounded-md"
                                 />
 
